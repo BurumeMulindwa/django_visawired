@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{%  load static %}
+
+
+  {% block content %}
+
+  <form action="https://www.payfast.co.za/eng/process" name="form_8885a829e652da6bf5992f15adf5ce77" onsubmit="return click_8885a829e652da6bf5992f15adf5ce77( this );" method="post">
+<input type="hidden" name="cmd" value="_paynow">
+<input type="hidden" name="receiver" value="10932649">
+<input type="hidden" name="item_name" value="business_visa">
+<input type="hidden" name="amount" value="500.00">
+<input type="hidden" name="item_description" value="">
+<input type="hidden" name="return_url" value="https://127.0.0.1:8000/prices">
+
+<table>
+<tr><td colspan=2 align=center><input type="image" src="https://www.payfast.co.za/images/buttons/light-small-paynow.png" width="165" height="36" alt="Pay Now" title="Pay Now with PayFast"></td></tr></table>
+</form>
+
+
+  {% endblock content %}

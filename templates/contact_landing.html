@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{%  load static %}
+
+
+  {% block content %}
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="{% static 'images/thank_you_1.jpg' %}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Thank you for your message
+              </h2>
+            </div>
+            <p>
+              We received your email and will respond shortly.
+            </p>
+            <p>
+              We are glad you got in touch with us.
+            </p>
+            <p>
+              VisaWired are specialists based in Johannesburg, South Africa
+              and have over 17 years of experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+  {% endblock content %}

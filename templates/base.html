@@ -1,0 +1,256 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+  <title>{% block title %}VisaWired{% endblock %}</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap' %}" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="{% static 'images/hero-bg.jpg' %}" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                472 Reitz Street
+                Sunnyside 0002
+              </span>
+            </a>
+            <a href="" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +01 1234567890
+              </span>
+            </a>
+            <a href="" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                contact@visawired.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <img class="img-fluid" src="{% static 'images/visawired_logo_3.jpg' %}" alt="..." /> &nbsp; &nbsp;
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>
+                VisaWired
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+{% block content %}
+
+{% endblock content %}
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>
+                VisaWired
+              </span>
+            </a>
+            <p>
+              We assist travellers with advice
+              to make their visa's application process painless.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Useful Link
+            </h5>
+            <ul>
+              <li>
+                <a href="http://www.onboardtourism.com">
+                  www.onboardtourism.com
+                </a>
+              </li>
+              <li>
+                <a href="http://www.google.com">
+                  www.google.com
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contact Us
+            </h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.3728290037125!2d28.20998741434943!3d-25.758246183638335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95618ec9e0c1c9%3A0xdacc76c523f3ee47!2s472%20Reitz%20St%2C%20Sunnyside%2C%20Pretoria%2C%200002!5e0!3m2!1sen!2sza!4v1652389300960!5m2!1sen!2sza"
+                    width="260" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                472, Reitz Street
+                Sunnyside 0002
+                Pretoria
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +27 123456789
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                contact@visawired.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Our Social Media
+            </h5>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- owl slider -->
+  <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
+  </script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  <script language="JavaScript" type="text/javascript">
+
+  function click_8885a829e652da6bf5992f15adf5ce77( aform_reference ) {
+              var aform = aform_reference;
+              aform['amount'].value = Math.round( aform['amount'].value*Math.pow( 10,2 ) )/Math.pow( 10,2 );
+  }
+
+  </script>
+  <script language="JavaScript" type="text/javascript">
+
+  function click_e92a5c6de58b28a254b48ec36385cea5( aform_reference ) {
+              var aform = aform_reference;
+              aform['amount'].value = Math.round( aform['amount'].value*Math.pow( 10,2 ) )/Math.pow( 10,2 );
+  }
+
+  </script>
+  <script language="JavaScript" type="text/javascript">
+
+  function click_b1f1ee4f10e91317a75f247fae8aed8b( aform_reference ) {
+              var aform = aform_reference;
+              aform['amount'].value = Math.round( aform['amount'].value*Math.pow( 10,2 ) )/Math.pow( 10,2 );
+  }
+
+  </script>
+  <script language="JavaScript" type="text/javascript">
+
+  function click_1a9837a5e9cce2194ac313ea606fdc0a( aform_reference ) {
+              var aform = aform_reference;
+              aform['amount'].value = Math.round( aform['amount'].value*Math.pow( 10,2 ) )/Math.pow( 10,2 );
+              aform['custom_amount'].value = aform['custom_amount'].value.replace( /^\s+|\s+$/g,"" );
+              if( !aform['custom_amount'].value || 0 === aform['custom_amount'].value.length || /^\s*$/.test( aform['custom_amount'].value ) ) {
+                  alert ( 'An amount is required' );
+                  return false;
+              }
+              aform['amount'].value = Math.round( aform['custom_amount'].value*Math.pow( 10,2 ) )/Math.pow( 10,2 );
+  }
+
+  </script>
+
+</body>
+
+</html>

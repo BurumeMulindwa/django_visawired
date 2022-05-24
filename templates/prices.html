@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{%  load static %}
+
+
+  {% block content %}
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our prices
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s1.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Consultation on visa process and assistance
+              </h6>
+              <p>
+                R500
+              </p>
+              <form action="https://www.payfast.co.za/eng/process" name="form_8885a829e652da6bf5992f15adf5ce77" onsubmit="return click_8885a829e652da6bf5992f15adf5ce77( this );" method="post">
+              <input type="hidden" name="cmd" value="_paynow">
+              <input type="hidden" name="receiver" value="10932649">
+              <input type="hidden" name="item_name" value="business_visa">
+              <input type="hidden" name="amount" value="500.00">
+              <input type="hidden" name="item_description" value="">
+              <input type="hidden" name="return_url" value="https://127.0.0.1:8000/prices">
+
+              <table>
+              <tr><td colspan=2 align=center><input type="image" src="https://www.payfast.co.za/images/buttons/light-small-paynow.png" width="165" height="36" alt="Pay Now" title="Pay Now with PayFast"></td></tr></table>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s2.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Consultation and application form assistance
+              </h6>
+              <p>
+                R800
+              </p>
+              <form action="https://www.payfast.co.za/eng/process" name="form_e92a5c6de58b28a254b48ec36385cea5" onsubmit="return click_e92a5c6de58b28a254b48ec36385cea5( this );" method="post">
+              <input type="hidden" name="cmd" value="_paynow">
+              <input type="hidden" name="receiver" value="10932649">
+              <input type="hidden" name="item_name" value="Visa Processing Application">
+              <input type="hidden" name="amount" value="800.00">
+              <input type="hidden" name="item_description" value="">
+
+              <table>
+              <tr><td colspan=2 align=center><input type="image" src="https://www.payfast.co.za/images/buttons/light-small-paynow.png" width="165" height="36" alt="Pay Now" title="Pay Now with PayFast"></td></tr></table>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s3.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Consultation, application form and appointment assistance.
+                Appointment fees are not included
+              </h6>
+              <p>
+                 R1000
+              </p>
+              <form action="https://www.payfast.co.za/eng/process" name="form_b1f1ee4f10e91317a75f247fae8aed8b" onsubmit="return click_b1f1ee4f10e91317a75f247fae8aed8b( this );" method="post">
+              <input type="hidden" name="cmd" value="_paynow">
+              <input type="hidden" name="receiver" value="10932649">
+              <input type="hidden" name="item_name" value="Visa Processing Application">
+              <input type="hidden" name="amount" value="1000.00">
+              <input type="hidden" name="item_description" value="">
+
+              <table>
+              <tr><td colspan=2 align=center><input type="image" src="https://www.payfast.co.za/images/buttons/light-small-paynow.png" width="165" height="36" alt="Pay Now" title="Pay Now with PayFast"></td></tr></table>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box ">
+            <div class="img-box">
+              <img src="{% static 'images/s4.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Assistance for escalating up to applications, refusal of visa applications,
+                companies and groups
+              </h6>
+              <p>Pay A Quote Here</p>
+              <form action="https://www.payfast.co.za/eng/process" name="form_1a9837a5e9cce2194ac313ea606fdc0a" onsubmit="return click_1a9837a5e9cce2194ac313ea606fdc0a( this );" method="post">
+              <input type="hidden" name="cmd" value="_paynow">
+              <input type="hidden" name="receiver" value="10932649">
+              <input type="hidden" name="item_name" value="Visa Processing Application Quote">
+              <input type="hidden" name="amount" value="1500.00">
+              <input type="hidden" name="item_description" value="">
+
+              <table>
+              <tr><td><font color="red">*</font>&nbsp;Price</td><td><input type="text" name="custom_amount" class="pricing" value="1500.00"></td></tr>
+              <tr><td colspan=2 align=center><input type="image" src="https://www.payfast.co.za/images/buttons/light-small-paynow.png" width="165" height="36" alt="Pay Now" title="Pay Now with PayFast"></td></tr></table>
+              </form>
+              <a href="{% url 'contact_captcha' %}">
+                Get A Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+  {% endblock content %}
